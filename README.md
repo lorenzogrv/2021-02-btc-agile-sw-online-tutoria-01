@@ -1,4 +1,4 @@
-# 2021-02-btc-agile-sw-online-tutoria-01
+# 2020-06-btc-agile-sw-online-tutoria-2
 
 <p align="center">
     <img src="https://github.com/GeeksHubsAcademy/2020-geekshubs-media/blob/master/image/githubagilesoftware.jpg" >	
@@ -22,9 +22,9 @@ Prerequisites       npm i -D jest typescript
 Installing          npm i -D ts-jest @types/jest	
 Creating config     npx ts-jest config:init	
 
-Compile all         tsc
-Compile file        tsc '{path}/foo.ts'
-Run file            npx node '{path}/foo.ts'
+Compile all         tsc (Compila dependencias TypeScript)
+Compile file        tsc '{path}/foo.ts' (Compila/Genera fichero transpilado JS)
+Run file            npx node '{path}/foo.js' (Ejecuta fichero transpilado JS)
 Compile/Run (fly)   npx ts-node '{path}/foo.ts'
 Running tests       npx jest	
 ```
