@@ -29,3 +29,5 @@ Run file            npx node '{path}/foo.js' (Ejecuta fichero transpilado JS)
 Compile/Run (fly)   npx ts-node '{path}/foo.ts'
 Running tests       npx jest	
 ```
+
+OK
