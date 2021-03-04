@@ -3,6 +3,7 @@ import { fizzBuzz } from '../src/es/geekshubs/academy/kata1/geekshubs'
 /* eslint-env jest */
 
 describe('Testing', () => {
+  /*
   test('Un test por aqui', () => {
     // Arrange
 
@@ -20,17 +21,18 @@ describe('Testing', () => {
     // Assert
     throw new Error('TODO')
   })
+  */
 
   test('Si no se le pasa nada, devuelve 0', () => {
     const returns = fizzBuzz()
 
-    expect(returns).toBe(0)
+    expect(returns).toBe('0')
   })
 
   test('Si se le pasa un 1, devuelve 1', () => {
     const returns = fizzBuzz(1)
 
-    expect(returns).toBe(1)
+    expect(returns).toBe('1')
   })
 
   test('Devuelve Fizz si el número es divisible entre 3', () => {
