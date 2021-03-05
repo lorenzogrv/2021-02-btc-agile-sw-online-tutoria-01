@@ -1,0 +1,1840 @@
+Script iniciado en 2021-03-04 17:48:02+0100
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  tree
+ .
+ ├── README.md
+ └── scriptfile
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  node -v
+v12.21.0
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo $(node -v)
+v12.21.0
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo $(npm -v)
+7.6.0
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm install -g typescript
+changed 1 package, and audited 2 packages in 3s
+
+found 0 vulnerabilities
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo $(tsc -v)
+Version 4.2.2
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (2021-02-btc-agile-sw-online-tutoria-01)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository: (https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-tutoria-01.git)
+keywords:
+author:
+license: (ISC)
+About to write to /home/lorenzo/repos/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01/package.json:
+
+{
+  "name": "2021-02-btc-agile-sw-online-tutoria-01",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">	   <img src=\"https://github.com/GeeksHubsAcademy/2020-geekshubs-media/blob/master/image/githubagilesoftware.jpg\" >\t </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-tutoria-01.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-tutoria-01/issues"
+  },
+  "homepage": "https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-tutoria-01#readme"
+}
+
+
+Is this OK? (yes)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm install --save-dev jest
+npm.WARN.deprecated]request-promise-native@1.0.9::request-promise-native_hasubeen@deprecatedlbecauseditmextendsathe-nowldeprecatederequest2package,tsee2https://github.com/request/request/issues/3142
+npm WARN deprecated]urix@0.1.0:-Please:seemhttps://github.com/lydell/urix#deprecatedad-nyc-config Completed in 1187ms
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+npm WARN deprecated]resolve-url@0.2.1:vhttps://github.com/lydell/resolve-url#deprecatedCompleted in 1257ms
+npm WARN deprecated]request@2.88.2:arequestghasibeenddeprecated,lseewhttps://github.com/request/request/issues/3142
+added 536 packages, and audited 537 packages in 11s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  touch .gitignore
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "node_modules" >> .gitignore
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  touch tsconfig.json
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim tsconfig.json
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim package.json
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm install --save-dev @types/jest
+added 1 package, and audited 538 packages in 2s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm install --save-dev ts-jest
+added 7 packages, and audited 545 packages in 3s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm install --save-dev typescript
+up to date, audited 545 packages in 2s
+
+24 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  bat package.json
+───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: package.json
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ {
+   2   │   "name": "2021-02-btc-agile-sw-online-tutoria-01",
+   3   │   "version": "1.0.0",
+   4   │   "description": "Tutoria 1",
+   5   │   "main": "index.js",
+   6   │   "scripts": {
+   7   │     "test": "jest",
+   8   │     "build": "tsc"
+   9   │   },
+  10   │   "repository": {
+  11   │     "type": "git",
+  12   │     "url": "git+https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-tutoria-01.git"
+  13   │   },
+  14   │   "author": "",
+  15   │   "license": "ISC",
+  16   │   "bugs": {
+  17   │     "url": "https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-tutoria-01/issues"
+  18   │   },
+  19   │   "homepage": "https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-tutoria-01#readme",
+  20   │   "devDependencies": {
+  21   │     "@types/jest": "^26.0.20",
+  22   │     "jest": "^26.6.3",
+  23   │     "ts-jest": "^26.5.3",
+  24   │     "typescript": "^4.2.2"
+  25   │   }
+  26   │ }
+───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  mkdir src
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  mkdir out
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  mkdir test
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  tree
+ .
+ ├── node_modules [381 entries exceeds filelimit, not opening dir]
+ ├── out
+ ├── src
+ ├── test
+ ├── package.json
+ ├── package-lock.json
+ ├── README.md
+ ├── scriptfile
+ └── tsconfig.json
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "Creo que todo ok. Espero a que el siga para el ts-jest config:init"
+Creo que todo ok. Espero a que el siga para el ts-jest config:init
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  cat tsconfig.json .
+───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: tsconfig.json
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ {
+   2   │   "compilerOptions": {
+   3   │     "target": "es5",
+   4   │     "module": "commonjs",
+   5   │     "sourceMap": false,
+   6   │     "outDir": "out"
+   7   │   }
+   8   │ }
+───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npx ts-jestgconfig:init
+
+Jest configuration written to "/home/lorenzo/repos/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01/jest.config.js".
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "El comando anterior genera el tsconfig.json y el jest.config.js"
+El comando anterior genera el tsconfig.json y el jest.config.js
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git branch
+* master
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "Está explicando lo de git-flow. Partimos de la ramasmaster"
+Está explicando lo de git-flow. Partimos de la rama master
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git branch develop
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git branch
+  develop
+* master
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "Creamos una rama develop"
+Creamos una rama develop
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "Habla de las ramas release-* y hotfix-*"
+Habla de las ramas release-* y hotfix-*
+damente"  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "Repite la importancia de usar naming basado en fechas para que sortee adecua
+Repite la importancia de usar naming basado en fechas para que sortee adecuadamente
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "Explica el flow de Pull Requests"
+Explica el flow de Pull Requests
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git checkout develop
+Cambiado a rama 'develop'
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git branch --set-upstream-to=origin/develop
+Rama 'develop' configurada para hacer seguimiento a la rama remota 'develop' de 'origin'.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+Desempaquetando objetos: 100% (4/4), listo.
+Desde https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-tutoria-01
+   4bc84b5..ee0e073  develop	-> origin/develop
+ * [nueva rama]      hotfix	-> origin/hotfix
+ * [nueva rama]      release	-> origin/release
+Actualizando 7197735..ee0e073
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git log
+commit ee0e073593d37d556208d2d174f2693cd8752c6b (HEAD -> develop, origin/develop)
+Merge: 4bc84b5 baa6f72
+Author: Victor Bolinches <vicboma1@users.noreply.github.com>
+Date:	Thu Mar 4 18:11:56 2021 +0100
+
+    Merge pull request #1 from vicboma1/master
+
+    Master vicboma-feature-145254 to Develop
+
+commit baa6f7262d679d6f837bcff9c3cb5538702ee5fe
+Author: Victor Bolinches <vicboma1@users.noreply.github.com>
+Date:	Thu Mar 4 18:09:03 2021 +0100
+
+    Update README.md
+
+commit 7197735ef3604cde630f1242ef58e6d28f303e87 (origin/release, origin/master, origin/hotfix, origin/HEAD, master)
+Author: Victor Bolinches <vicboma1@users.noreply.github.com>
+Date:	Thu Mar 4 17:00:57 2021 +0100
+
+    Update README.md
+
+commit e72b6c5bc9190f584aa48f7f33984159f04d87c8
+Author: Victor Bolinches <vicboma1@users.noreply.github.com>
+Date:	Thu Mar 4 16:44:22 2021 +0100
+
+    Update README.md
+
+commit 4bc84b55b42a4458c30afd14191c927aa526c60e (origin/develop-documentation)
+Author: vicboma1 <victorbolinchesmarin@gmail.com>
+Date:	Thu Mar 4 16:30:59 2021 +0100
+
+    update documentation
+
+commit 7592bbc9672a2be8c9e32e976b7ee796a0d5d4d1
+Author: Victor Bolinches <vicboma1@users.noreply.github.com>
+Date:	Thu Mar 4 15:59:54 2021 +0100
+
+    Update README.md
+
+commit a618d3da97d01d1317723d3b8b68f7847a75e476
+Author: Victor Bolinches <vicboma1@users.noreply.github.com>
+Date:	Thu Mar 4 15:58:22 2021 +0100
+
+    Initial commit
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git remote -v
+origin	https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-tutoria-01.git (fetch)
+origin	https://github.com/GeeksHubsAcademy/2021-02-btc-agile-sw-online-tutoria-01.git (push)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "Voy a cambiar el origen a mi fork"
+Voy a cambiar el origen a mi fork
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git remote removeo origin
+toria-01.git  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git remote add origin https://github.com/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git fetch origin
+Desde https://github.com/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01
+ * [nueva rama]      develop		   -> origin/develop
+ * [nueva rama]      develop-documentation -> origin/develop-documentation
+ * [nueva rama]      hotfix		   -> origin/hotfix
+ * [nueva rama]      master		   -> origin/master
+ * [nueva rama]      release		   -> origin/release
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	.gitignore
+	jest.config.js
+	package-lock.json
+	package.json
+	scriptfile
+	tsconfig.json
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git add .gitignore
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Cambios a ser confirmados:
+  (usa "git reset HEAD <archivo>..." para sacar del área de stage)
+
+	nuevo archivo:	.gitignore
+	nuevo archivo:	jest.config.js
+	nuevo archivo:	package-lock.json
+	nuevo archivo:	package.json
+	nuevo archivo:	scriptfile
+	nuevo archivo:	tsconfig.json
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git checkout -- <archivo>..." para descartar los cambios en el directorio de trabajo)
+
+	modificado:	scriptfile
+
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git reset HEAD scriptfile
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "Voy a intentar subir lo que tengo a mi fork""
+Voy a intentar subir lo que tengo a mi fork
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Cambios a ser confirmados:
+  (usa "git reset HEAD <archivo>..." para sacar del área de stage)
+
+	nuevo archivo:	.gitignore
+	nuevo archivo:	jest.config.js
+	nuevo archivo:	package-lock.json
+	nuevo archivo:	package.json
+	nuevo archivo:	tsconfig.json
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git commit -m "Setup inicial"
+[develop f24fae6] Setup inicial
+ 5 files changed, 11293 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 jest.config.js
+ create mode 100644 package-lock.json
+ create mode 100644 package.json
+ create mode 100644 tsconfig.json
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git remote -v
+origin	https://github.com/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01.git (fetch)
+origin	https://github.com/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01.git (push)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git branch --set-upstream-to=origin/develop
+Rama 'develop' configurada para hacer seguimiento a la rama remota 'develop' de 'origin'.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está adelantada a 'origin/develop' por 5 commits.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git push
+Username for 'https://github.com': lorenzogrv
+Password for 'https://lorenzogrv@github.com':
+Contando objetos: 7, listo.
+Delta compression using up to 8 threads.
+Comprimiendo objetos: 100% (6/6), listo.
+Escribiendo objetos: 100% (7/7), 98.59 KiB | 8.96 MiB/s, listo.
+Total 7 (delta 0), reused 0 (delta 0)
+To https://github.com/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01.git
+   4bc84b5..f24fae6  develop -> develop
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  touch src/main.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  tsc src/main.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  tree
+ .
+ ├── node_modules [381 entries exceeds filelimit, not opening dir]
+ ├── out
+ ├── src
+ │   ├── main.js
+ │   └── main.ts
+ ├── test
+ ├── jest.config.js
+ ├── package.json
+ ├── package-lock.json
+ ├── README.md
+ ├── scriptfile
+ └── tsconfig.json
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/main.js
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  rm src/main.js
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/main.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  tsc src/main.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/main.js
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/main.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  rm src/main.js
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npx ts-node src/main.ts
+Need to install the following packages:
+  ts-node
+Ok to proceed? (y) y
+Hola.mundo
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  mkdir -p src/es/geekshubs/academy/kata1
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim geekshubs.tshubs/academy/kata1/geekshubs.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm install --save-dev standard
+added 154 packages, and audited 699 packages in 6s
+
+64 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/es/geekshubs/academy/kata1/geekshubs.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm install --save-dev ts-standard
+added 49 packages, and audited 748 packages in 8s
+
+78 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/es/geekshubs/academy/kata1/geekshubs.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "Necesitaba los linters para vim"
+Necesitaba los linters para vim
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim test/suite.test.js
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git checkout -- <archivo>..." para descartar los cambios en el directorio de trabajo)
+
+	modificado:	package-lock.json
+	modificado:	package.json
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+	src/
+	test/
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git add package*
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Cambios a ser confirmados:
+  (usa "git reset HEAD <archivo>..." para sacar del área de stage)
+
+	modificado:	package-lock.json
+	modificado:	package.json
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+	src/
+	test/
+
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git commit -m "Añadir los linters"
+[develop e5b4b71] Añadir los linters
+ 2 files changed, 8648 insertions(+), 3999 deletions(-)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.js
+ FAIL  test/suite.test.js
+
+ RUNS  test/suite.test.js
+  ● Test suite failed to run
+
+    Jest encountered an unexpected token
+
+    This usually means that you are trying to import a file which Jest cannot parse, e.g. it's not plain JavaScript.
+
+    By default, if Jest sees a Babel config, it will use that to transform your files, ignoring "node_modules".
+
+    Here's what you can do:
+     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/en/ecmascript-modules for how to enable it.
+     • To have some of your "node_modules" files transformed, you can specify a custom "transformIgnorePatterns" in your config.
+     • If you need a custom transformation specify a "transform" option in your config.
+     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the "moduleNameMapper" config option.
+
+    You'll find more details and examples of these config options in the docs:
+    https://jestjs.io/docs/en/configuration.html
+
+    Details:
+
+    /home/lorenzo/repos/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01/test/suite.test.js:1
+    ({"Object.<anonymous>":function(module,exports,require,__dirname,__filename,global,jest){import { fizzBuzz } from '../src/es/geekshubs/academy/kata1'
+											     ^^^^^^
+
+    SyntaxError: Cannot use import statement outside a module
+
+      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1350:14)
+
+
+ RUNS  test/suite.test.js
+
+ RUNS  test/suite.test.js
+Test Suites: 1 failed, 1 total
+Tests:	     0 total
+Snapshots:   0 total
+Time:	     0.394 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  tree src/
+ .
+ ├── node_modules [487 entries exceeds filelimit, not opening dir]
+ ├── out
+ ├── src
+ │   ├── es
+ │   └── main.ts
+ ├── test
+ │   └── suite.test.js
+ ├── jest.config.js
+ ├── package.json
+ ├── package-lock.json
+ ├── README.md
+ ├── scriptfile
+ └── tsconfig.json
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  mv test/suite.test.js test/suite.test.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ FAIL  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  ● Test suite failed to run
+
+    test/suite.test.ts:1:26 - error TS2307: Cannot find module '../src/es/geekshubs/academy/kata1' or its corresponding type declarations.
+
+    1 import { fizzBuzz } from '../src/es/geekshubs/academy/kata1'
+			       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 failed, 1 total
+Tests:	     0 total
+Snapshots:   0 total
+Time:	     2.414 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/es/geekshubs/academy/kata1/geekshubs.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ FAIL  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  ● Test suite failed to run
+
+    test/suite.test.ts:1:26 - error TS2307: Cannot find module '../src/es/geekshubs/academy/kata1' or its corresponding type declarations.
+
+    1 import { fizzBuzz } from '../src/es/geekshubs/academy/kata1'
+			       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 failed, 1 total
+Tests:	     0 total
+Snapshots:   0 total
+Time:	     2.413 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/es/geekshubs/academy/kata1/geekshubs.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ FAIL  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  ● Test suite failed to run
+
+    test/suite.test.ts:1:26 - error TS2307: Cannot find module '../src/es/geekshubs/academy/kata1' or its corresponding type declarations.
+
+    1 import { fizzBuzz } from '../src/es/geekshubs/academy/kata1'
+			       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 failed, 1 total
+Tests:	     0 total
+Snapshots:   0 total
+Time:	     2.367 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  lsesrc/es/geekshubs/academy/kata1/geekshubs.ts ^C
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim test/suite.test.ts
+.git/		   jest.config.js     out/		 package-lock.json  scriptfile	       test/
+.gitignore	   node_modules/      package.json	 README.md	    src/	       tsconfig.json
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim test/suite.test.ts
+.git/		   jest.config.js     out/		 package-lock.json  scriptfile	       test/
+.gitignore	   node_modules/      package.json	 README.md	    src/	       tsconfig.json
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim test/suite.test.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ FAIL  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  Testing
+
+ RUNS  test/suite.test.ts
+    ✕ Un test por aqui (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Un test por alla
+
+ RUNS  test/suite.test.ts
+
+
+ RUNS  test/suite.test.ts
+  ● Testing › Un test por aqui
+
+    TODO
+
+      10 |
+      11 |     // Assert
+    > 12 |     throw new Error('TODO')
+	 |	     ^
+      13 |   })
+      14 |
+      15 |   test('Un test por alla', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:12:11)
+
+  ● Testing › Un test por alla
+
+    TODO
+
+      19 |
+      20 |     // Assert
+    > 21 |     throw new Error('TODO')
+	 |	     ^
+      22 |   })
+      23 | })
+      24 |
+
+      at Object.<anonymous> (test/suite.test.ts:21:11)
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 failed, 1 total
+Tests:	     2 failed, 2 total
+Snapshots:   0 total
+Time:	     2.479 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está adelantada a 'origin/develop' por 1 commit.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+	src/
+	test/
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git add src/
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está adelantada a 'origin/develop' por 1 commit.
+  (usa "git push" para publicar tus commits locales)
+
+Cambios a ser confirmados:
+  (usa "git reset HEAD <archivo>..." para sacar del área de stage)
+
+	nuevo archivo:	src/es/geekshubs/academy/kata1/geekshubs.ts
+	nuevo archivo:	src/main.ts
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+	test/
+
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git add test/
+g lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está adelantada a 'origin/develop' por 1 commit.
+  (usa "git push" para publicar tus commits locales)
+
+Cambios a ser confirmados:
+  (usa "git reset HEAD <archivo>..." para sacar del área de stage)
+
+	nuevo archivo:	src/es/geekshubs/academy/kata1/geekshubs.ts
+	nuevo archivo:	src/main.ts
+	nuevo archivo:	test/suite.test.ts
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git commit -m "Primeros tests, fizzBuzz and friends"
+[develop d63455b] Primeros tests, fizzBuzz and friends
+ 3 files changed, 31 insertions(+)
+ create mode 100644 src/es/geekshubs/academy/kata1/geekshubs.ts
+ create mode 100644 src/main.ts
+ create mode 100644 test/suite.test.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git push
+Username for 'https://github.com': lorenzogrv
+Password for 'https://lorenzogrv@github.com':
+Contando objetos: 15, listo.
+Delta compression using up to 8 threads.
+Comprimiendo objetos: 100% (10/10), listo.
+Escribiendo objetos: 100% (15/15), 40.60 KiB | 2.71 MiB/s, listo.
+Total 15 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01.git
+   f24fae6..d63455b  develop -> develop
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  cat ../btc-agile/0203-tdd-bdd/src/test/kata2-fizzbuzz.test.ts
+───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: ../btc-agile/0203-tdd-bdd/src/test/kata2-fizzbuzz.test.ts
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ import { FizzBuzz } from '../'
+   2   │
+   3   │ /* eslint-env jest */
+   4   │
+   5   │ test('Si no se le pasa nada, devuelve 0', () => {
+   6   │   const subject = new FizzBuzz()
+   7   │
+   8   │   const returns = subject.run()
+   9   │
+  10   │   expect(returns).toBe(0)
+  11   │ })
+  12   │
+  13   │ test('Si se le pasa un 1, devuelve 1', () => {
+  14   │   const subject = new FizzBuzz()
+  15   │
+  16   │   const returns = subject.run(1)
+  17   │
+  18   │   expect(returns).toBe(1)
+  19   │ })
+  20   │
+  21   │ test('Devuelve Fizz si el número es divisible entre 3', () => {
+  22   │   const subject = new FizzBuzz()
+  23   │
+  24   │   expect(subject.run(3)).toBe('Fizz')
+  25   │   expect(subject.run(6)).toBe('Fizz')
+  26   │   expect(subject.run(9)).toBe('Fizz')
+  27   │   expect(subject.run(12)).toBe('Fizz')
+  28   │   expect(subject.run(18)).toBe('Fizz')
+  29   │   expect(subject.run(21)).toBe('Fizz')
+  30   │   expect(subject.run(333)).toBe('Fizz')
+  31   │ })
+  32   │
+  33   │ test('Devuelve Buzz si el número es divisible entre 5', () => {
+  34   │   const subject = new FizzBuzz()
+  35   │
+  36   │   expect(subject.run(5)).toBe('Buzz')
+  37   │   expect(subject.run(10)).toBe('Buzz')
+  38   │   expect(subject.run(20)).toBe('Buzz')
+  39   │   expect(subject.run(25)).toBe('Buzz')
+  40   │   expect(subject.run(50)).toBe('Buzz')
+  41   │   expect(subject.run(550)).toBe('Buzz')
+  42   │ })
+  43   │
+  44   │ test('Devuelve FizzBuzz si el número es divisible entre 3 y entre 5', () => {
+  45   │   const subject = new FizzBuzz()
+  46   │
+  47   │   expect(subject.run(15)).toBe('FizzBuzz')
+  48   │   expect(subject.run(30)).toBe('FizzBuzz')
+  49   │   expect(subject.run(60)).toBe('FizzBuzz')
+  50   │   expect(subject.run(90)).toBe('FizzBuzz')
+  51   │   expect(subject.run(555)).toBe('FizzBuzz')
+  52   │ })
+───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  cat ../btc-agile/0203-tdd-bdd/src/test/kata2-fizzbuzz.test.ts >> test/suite.test.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim test/suite.test.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ FAIL  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  ● Test suite failed to run
+
+    test/suite.test.ts:25:21 - error TS2554: Expected 1 arguments, but got 0.
+
+    25	   const returns = fizzBuzz()
+			   ~~~~~~~~~~
+
+      src/es/geekshubs/academy/kata1/geekshubs.ts:1:27
+	1 export function fizzBuzz (n: number): string {
+				    ~~~~~~~~~
+	An argument for 'n' was not provided.
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 failed, 1 total
+Tests:	     0 total
+Snapshots:   0 total
+Time:	     2.488 s, estimated 3 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/suite.test.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/es/geekshubs/academy/kata1/geekshubs.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ FAIL  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  Testing
+
+ RUNS  test/suite.test.ts
+    ✕ Un test por aqui (2 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Un test por alla
+
+ RUNS  test/suite.test.ts
+    ✕ Si no se le pasa nada, devuelve 0 (3 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Si se le pasa un 1, devuelve 1
+
+ RUNS  test/suite.test.ts
+    ✕ Devuelve Fizz si el número es divisible entre 3 (7 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Devuelve Buzz si el número es divisible entre 5
+
+ RUNS  test/suite.test.ts
+    ✕ Devuelve FizzBuzz si el número es divisible entre 3 y entre 5 (1 ms)
+
+ RUNS  test/suite.test.ts
+
+
+ RUNS  test/suite.test.ts
+  ● Testing › Un test por aqui
+
+    TODO
+
+      10 |
+      11 |     // Assert
+    > 12 |     throw new Error('TODO')
+	 |	     ^
+      13 |   })
+      14 |
+      15 |   test('Un test por alla', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:12:11)
+
+  ● Testing › Un test por alla
+
+    TODO
+
+      19 |
+      20 |     // Assert
+    > 21 |     throw new Error('TODO')
+	 |	     ^
+      22 |   })
+      23 |
+      24 |   test('Si no se le pasa nada, devuelve 0', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:21:11)
+
+  ● Testing › Si no se le pasa nada, devuelve 0
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: ""
+
+      25 |     const returns = fizzBuzz()
+      26 |
+    > 27 |     expect(returns).toBe(0)
+	 |		       ^
+      28 |   })
+      29 |
+      30 |   test('Si se le pasa un 1, devuelve 1', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:27:21)
+
+  ● Testing › Si se le pasa un 1, devuelve 1
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: ""
+
+      31 |     const returns = fizzBuzz(1)
+      32 |
+    > 33 |     expect(returns).toBe(1)
+	 |		       ^
+      34 |   })
+      35 |
+      36 |   test('Devuelve Fizz si el número es divisible entre 3', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:33:21)
+
+  ● Testing › Devuelve Fizz si el número es divisible entre 3
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Fizz"
+    Received: ""
+
+      35 |
+      36 |   test('Devuelve Fizz si el número es divisible entre 3', () => {
+    > 37 |     expect(fizzBuzz(3)).toBe('Fizz')
+	 |			   ^
+      38 |     expect(fizzBuzz(6)).toBe('Fizz')
+      39 |     expect(fizzBuzz(9)).toBe('Fizz')
+      40 |     expect(fizzBuzz(12)).toBe('Fizz')
+
+      at Object.<anonymous> (test/suite.test.ts:37:25)
+
+  ● Testing › Devuelve Buzz si el número es divisible entre 5
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Buzz"
+    Received: ""
+
+      45 |
+      46 |   test('Devuelve Buzz si el número es divisible entre 5', () => {
+    > 47 |     expect(fizzBuzz(5)).toBe('Buzz')
+	 |			   ^
+      48 |     expect(fizzBuzz(10)).toBe('Buzz')
+      49 |     expect(fizzBuzz(20)).toBe('Buzz')
+      50 |     expect(fizzBuzz(25)).toBe('Buzz')
+
+      at Object.<anonymous> (test/suite.test.ts:47:25)
+
+  ● Testing › Devuelve FizzBuzz si el número es divisible entre 3 y entre 5
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "FizzBuzz"
+    Received: ""
+
+      54 |
+      55 |   test('Devuelve FizzBuzz si el número es divisible entre 3 y entre 5', () => {
+    > 56 |     expect(fizzBuzz(15)).toBe('FizzBuzz')
+	 |			    ^
+      57 |     expect(fizzBuzz(30)).toBe('FizzBuzz')
+      58 |     expect(fizzBuzz(60)).toBe('FizzBuzz')
+      59 |     expect(fizzBuzz(90)).toBe('FizzBuzz')
+
+      at Object.<anonymous> (test/suite.test.ts:56:26)
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 failed, 1 total
+Tests:	     7 failed, 7 total
+Snapshots:   0 total
+Time:	     2.446 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git checkout -- <archivo>..." para descartar los cambios en el directorio de trabajo)
+
+	modificado:	src/es/geekshubs/academy/kata1/geekshubs.ts
+	modificado:	test/suite.test.ts
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git diff test/suite.test.ts
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+modified: test/suite.test.ts
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+@ test/suite.test.ts:23 @ describe('Testing', () => {
+    // Assert
+    throw new Error('TODO')
+  })
+
+  test('Si no se le pasa nada, devuelve 0', () => {
+    const returns = fizzBuzz()
+
+    expect(returns).toBe(0)
+  })
+
+  test('Si se le pasa un 1, devuelve 1', () => {
+    const returns = fizzBuzz(1)
+
+    expect(returns).toBe(1)
+  })
+
+  test('Devuelve Fizz si el número es divisible entre 3', () => {
+    expect(fizzBuzz(3)).toBe('Fizz')
+    expect(fizzBuzz(6)).toBe('Fizz')
+    expect(fizzBuzz(9)).toBe('Fizz')
+    expect(fizzBuzz(12)).toBe('Fizz')
+    expect(fizzBuzz(18)).toBe('Fizz')
+    expect(fizzBuzz(21)).toBe('Fizz')
+    expect(fizzBuzz(333)).toBe('Fizz')
+  })
+
+  test('Devuelve Buzz si el número es divisible entre 5', () => {
+    expect(fizzBuzz(5)).toBe('Buzz')
+    expect(fizzBuzz(10)).toBe('Buzz')
+    expect(fizzBuzz(20)).toBe('Buzz')
+    expect(fizzBuzz(25)).toBe('Buzz')
+    expect(fizzBuzz(50)).toBe('Buzz')
+    expect(fizzBuzz(550)).toBe('Buzz')
+  })
+
+  test('Devuelve FizzBuzz si el número es divisible entre 3 y entre 5', () => {
+    expect(fizzBuzz(15)).toBe('FizzBuzz')
+    expect(fizzBuzz(30)).toBe('FizzBuzz')
+    expect(fizzBuzz(60)).toBe('FizzBuzz')
+    expect(fizzBuzz(90)).toBe('FizzBuzz')
+    expect(fizzBuzz(555)).toBe('FizzBuzz')
+  })
+})
+
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git add test/suite.test.tsest.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Cambios a ser confirmados:
+  (usa "git reset HEAD <archivo>..." para sacar del área de stage)
+
+	modificado:	test/suite.test.ts
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git checkout -- <archivo>..." para descartar los cambios en el directorio de trabajo)
+
+	modificado:	src/es/geekshubs/academy/kata1/geekshubs.ts
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git diff src/
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+modified: src/es/geekshubs/academy/kata1/geekshubs.ts
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+@ src/es/geekshubs/academy/kata1/geekshubs.ts:1 @
+export function fizzBuzz (n: number): string {
+export function fizzBuzz (n: number = 0): string {
+  return ''
+}
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git add src/
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Cambios a ser confirmados:
+  (usa "git reset HEAD <archivo>..." para sacar del área de stage)
+
+	modificado:	src/es/geekshubs/academy/kata1/geekshubs.ts
+	modificado:	test/suite.test.ts
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git commit -m "Importar tests de la kata fizzbuzz"
+[develop db06f41] Importar tests de la kata fizzbuzz
+ 2 files changed, 41 insertions(+), 1 deletion(-)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git push
+Username for 'https://github.com': lorenzogrv
+Password for 'https://lorenzogrv@github.com':
+Contando objetos: 10, listo.
+Delta compression using up to 8 threads.
+Comprimiendo objetos: 100% (5/5), listo.
+Escribiendo objetos: 100% (10/10), 1.07 KiB | 1.07 MiB/s, listo.
+Total 10 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01.git
+   d63455b..db06f41  develop -> develop
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ FAIL  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  Testing
+
+ RUNS  test/suite.test.ts
+    ✕ Un test por aqui (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Un test por alla (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Si no se le pasa nada, devuelve 0 (3 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Si se le pasa un 1, devuelve 1 (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Devuelve Fizz si el número es divisible entre 3 (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Devuelve Buzz si el número es divisible entre 5
+
+ RUNS  test/suite.test.ts
+    ✕ Devuelve FizzBuzz si el número es divisible entre 3 y entre 5 (1 ms)
+
+ RUNS  test/suite.test.ts
+
+
+ RUNS  test/suite.test.ts
+  ● Testing › Un test por aqui
+
+    TODO
+
+      10 |
+      11 |     // Assert
+    > 12 |     throw new Error('TODO')
+	 |	     ^
+      13 |   })
+      14 |
+      15 |   test('Un test por alla', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:12:11)
+
+  ● Testing › Un test por alla
+
+    TODO
+
+      19 |
+      20 |     // Assert
+    > 21 |     throw new Error('TODO')
+	 |	     ^
+      22 |   })
+      23 |
+      24 |   test('Si no se le pasa nada, devuelve 0', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:21:11)
+
+  ● Testing › Si no se le pasa nada, devuelve 0
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: ""
+
+      25 |     const returns = fizzBuzz()
+      26 |
+    > 27 |     expect(returns).toBe(0)
+	 |		       ^
+      28 |   })
+      29 |
+      30 |   test('Si se le pasa un 1, devuelve 1', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:27:21)
+
+  ● Testing › Si se le pasa un 1, devuelve 1
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: ""
+
+      31 |     const returns = fizzBuzz(1)
+      32 |
+    > 33 |     expect(returns).toBe(1)
+	 |		       ^
+      34 |   })
+      35 |
+      36 |   test('Devuelve Fizz si el número es divisible entre 3', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:33:21)
+
+  ● Testing › Devuelve Fizz si el número es divisible entre 3
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Fizz"
+    Received: ""
+
+      35 |
+      36 |   test('Devuelve Fizz si el número es divisible entre 3', () => {
+    > 37 |     expect(fizzBuzz(3)).toBe('Fizz')
+	 |			   ^
+      38 |     expect(fizzBuzz(6)).toBe('Fizz')
+      39 |     expect(fizzBuzz(9)).toBe('Fizz')
+      40 |     expect(fizzBuzz(12)).toBe('Fizz')
+
+      at Object.<anonymous> (test/suite.test.ts:37:25)
+
+  ● Testing › Devuelve Buzz si el número es divisible entre 5
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "Buzz"
+    Received: ""
+
+      45 |
+      46 |   test('Devuelve Buzz si el número es divisible entre 5', () => {
+    > 47 |     expect(fizzBuzz(5)).toBe('Buzz')
+	 |			   ^
+      48 |     expect(fizzBuzz(10)).toBe('Buzz')
+      49 |     expect(fizzBuzz(20)).toBe('Buzz')
+      50 |     expect(fizzBuzz(25)).toBe('Buzz')
+
+      at Object.<anonymous> (test/suite.test.ts:47:25)
+
+  ● Testing › Devuelve FizzBuzz si el número es divisible entre 3 y entre 5
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: "FizzBuzz"
+    Received: ""
+
+      54 |
+      55 |   test('Devuelve FizzBuzz si el número es divisible entre 3 y entre 5', () => {
+    > 56 |     expect(fizzBuzz(15)).toBe('FizzBuzz')
+	 |			    ^
+      57 |     expect(fizzBuzz(30)).toBe('FizzBuzz')
+      58 |     expect(fizzBuzz(60)).toBe('FizzBuzz')
+      59 |     expect(fizzBuzz(90)).toBe('FizzBuzz')
+
+      at Object.<anonymous> (test/suite.test.ts:56:26)
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 failed, 1 total
+Tests:	     7 failed, 7 total
+Snapshots:   0 total
+Time:	     0.735 s, estimated 3 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  bat ../btc-agile/0203-tdd-bdd/src/test/kata2-fizzbuzz.test.ts
+index.ts
+───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: ../btc-agile/0203-tdd-bdd/src/index.ts
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   1   │ /**
+   2   │  * Suma cualquier número de argumentos recibidos
+   3   │  */
+   4   │ export const sum = (...a: number[]): number => a.reduce((a, b) => a + b, 0)
+   5   │
+   6   │ /**
+   7   │  * Clase del kata FizzBuzz
+   8   │  * @todo parece absurdo usar una clase en este caso concreto
+   9   │  */
+  10   │ export class FizzBuzz {
+  11   │   run (n: number = 0): string | number {
+  12   │     if (n === 0) return 0
+  13   │     if (n % 3 === 0) return n % 5 === 0 ? FIZZ + BUZZ : FIZZ
+  14   │     if (n % 5 === 0) return BUZZ
+  15   │     return n
+  16   │   }
+  17   │ }
+  18   │
+  19   │ const FIZZ = 'Fizz'
+  20   │ const BUZZ = 'Buzz'
+  21   │
+  22   │ /**
+  23   │  * Clase del kata StringCalculator
+  24   │  * @todo parece absurdo usar una clase en este caso concreto
+  25   │  */
+  26   │ export class StringCalculator {
+  27   │   add (str: string): number {
+  28   │     return str.split(',').reduce((a, b) => +a + +b, 0)
+  29   │   }
+  30   │ }
+  31   │
+  32   │ /**
+  33   │  * Función para el reto "Números Primos"
+  34   │  */
+  35   │ export function isOptimusPrime (n: number): string {
+  36   │   let i = 1
+  37   │   while (++i < n) {
+  38   │     if (n % i === 0) return `${n} es compuesto`
+  39   │   }
+  40   │   return `${n} es primo`
+  41   │ }
+───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  bat ../btc-agile/0203-tdd-bdd/src/index.ts --line-range 6:17
+───────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       │ File: ../btc-agile/0203-tdd-bdd/src/index.ts
+───────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+   6   │ /**
+   7   │  * Clase del kata FizzBuzz
+   8   │  * @todo parece absurdo usar una clase en este caso concreto
+   9   │  */
+  10   │ export class FizzBuzz {
+  11   │   run (n: number = 0): string | number {
+  12   │     if (n === 0) return 0
+  13   │     if (n % 3 === 0) return n % 5 === 0 ? FIZZ + BUZZ : FIZZ
+  14   │     if (n % 5 === 0) return BUZZ
+  15   │     return n
+  16   │   }
+  17   │ }
+───────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+cademy/kata1/geekshubs.tsrenzogrv  2021-02-btc-agile-sw-online-tutoria-01  bat ../btc-agile/0203-tdd-bdd/src/index.ts --line-range 6:17 >> src/es/geekshubs/academy/kata1/geekshubs.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/es/geekshubs/academy/kata1/geekshubs.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git checkout -- <archivo>..." para descartar los cambios en el directorio de trabajo)
+
+	modificado:	src/es/geekshubs/academy/kata1/geekshubs.ts
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git diff src/
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+modified: src/es/geekshubs/academy/kata1/geekshubs.ts
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+@ src/es/geekshubs/academy/kata1/geekshubs.ts:4 @
+const FIZZ = 'Fizz'
+const FUZZ = 'Fuzz'
+
+/**
+ * kata FizzBuzz
+ */
+export function fizzBuzz (n: number = 0): string {
+  return ''
+  if (n === 0) return 0
+  if (n % 3 === 0) return n % 5 === 0 ? FIZZ + BUZZ : FIZZ
+  if (n % 5 === 0) return BUZZ
+  return n
+}
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test^C
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/es/geekshubs/academy/kata1/geekshubs.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ FAIL  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  ● Test suite failed to run
+
+    src/es/geekshubs/academy/kata1/geekshubs.ts:8:16 - error TS2322: Type 'number' is not assignable to type 'string'.
+
+    8	if (n === 0) return 0
+		     ~~~~~~~~
+    src/es/geekshubs/academy/kata1/geekshubs.ts:11:3 - error TS2322: Type 'number' is not assignable to type 'string'.
+
+    11	 return n
+	 ~~~~~~~~
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 failed, 1 total
+Tests:	     0 total
+Snapshots:   0 total
+Time:	     2.305 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim src/es/geekshubs/academy/kata1/geekshubs.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ FAIL  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  Testing
+
+ RUNS  test/suite.test.ts
+    ✕ Un test por aqui (8 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Un test por alla (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Si no se le pasa nada, devuelve 0 (5 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Si se le pasa un 1, devuelve 1
+
+ RUNS  test/suite.test.ts
+    ✓ Devuelve Fizz si el número es divisible entre 3 (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✓ Devuelve Buzz si el número es divisible entre 5 (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✓ Devuelve FizzBuzz si el número es divisible entre 3 y entre 5 (1 ms)
+
+ RUNS  test/suite.test.ts
+
+
+ RUNS  test/suite.test.ts
+  ● Testing › Un test por aqui
+
+    TODO
+
+      10 |
+      11 |     // Assert
+    > 12 |     throw new Error('TODO')
+	 |	     ^
+      13 |   })
+      14 |
+      15 |   test('Un test por alla', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:12:11)
+
+  ● Testing › Un test por alla
+
+    TODO
+
+      19 |
+      20 |     // Assert
+    > 21 |     throw new Error('TODO')
+	 |	     ^
+      22 |   })
+      23 |
+      24 |   test('Si no se le pasa nada, devuelve 0', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:21:11)
+
+  ● Testing › Si no se le pasa nada, devuelve 0
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 0
+    Received: "0"
+
+      25 |     const returns = fizzBuzz()
+      26 |
+    > 27 |     expect(returns).toBe(0)
+	 |		       ^
+      28 |   })
+      29 |
+      30 |   test('Si se le pasa un 1, devuelve 1', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:27:21)
+
+  ● Testing › Si se le pasa un 1, devuelve 1
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: "1"
+
+      31 |     const returns = fizzBuzz(1)
+      32 |
+    > 33 |     expect(returns).toBe(1)
+	 |		       ^
+      34 |   })
+      35 |
+      36 |   test('Devuelve Fizz si el número es divisible entre 3', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:33:21)
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 failed, 1 total
+Tests:	     4 failed, 3 passed, 7 total
+Snapshots:   0 total
+Time:	     2.544 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim test/suite.test.ts s
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ FAIL  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  Testing
+
+ RUNS  test/suite.test.ts
+    ✕ Un test por aqui (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✕ Un test por alla (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✓ Si no se le pasa nada, devuelve 0 (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✓ Si se le pasa un 1, devuelve 1
+
+ RUNS  test/suite.test.ts
+    ✓ Devuelve Fizz si el número es divisible entre 3 (6 ms)
+
+ RUNS  test/suite.test.ts
+    ✓ Devuelve Buzz si el número es divisible entre 5 (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✓ Devuelve FizzBuzz si el número es divisible entre 3 y entre 5
+
+ RUNS  test/suite.test.ts
+
+
+ RUNS  test/suite.test.ts
+  ● Testing › Un test por aqui
+
+    TODO
+
+      10 |
+      11 |     // Assert
+    > 12 |     throw new Error('TODO')
+	 |	     ^
+      13 |   })
+      14 |
+      15 |   test('Un test por alla', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:12:11)
+
+  ● Testing › Un test por alla
+
+    TODO
+
+      19 |
+      20 |     // Assert
+    > 21 |     throw new Error('TODO')
+	 |	     ^
+      22 |   })
+      23 |
+      24 |   test('Si no se le pasa nada, devuelve 0', () => {
+
+      at Object.<anonymous> (test/suite.test.ts:21:11)
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 failed, 1 total
+Tests:	     2 failed, 5 passed, 7 total
+Snapshots:   0 total
+Time:	     2.429 s, estimated 3 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  vim test/suite.test.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  npm test
+
+> 2021-02-btc-agile-sw-online-tutoria-01@1.0.0 test
+> jest
+
+Determining test suites to run...
+
+ RUNS  test/suite.test.ts
+ PASS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+  Testing
+
+ RUNS  test/suite.test.ts
+    ✓ Si no se le pasa nada, devuelve 0 (2 ms)
+
+ RUNS  test/suite.test.ts
+    ✓ Si se le pasa un 1, devuelve 1
+
+ RUNS  test/suite.test.ts
+    ✓ Devuelve Fizz si el número es divisible entre 3 (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✓ Devuelve Buzz si el número es divisible entre 5 (1 ms)
+
+ RUNS  test/suite.test.ts
+    ✓ Devuelve FizzBuzz si el número es divisible entre 3 y entre 5 (6 ms)
+
+ RUNS  test/suite.test.ts
+
+
+ RUNS  test/suite.test.ts
+
+ RUNS  test/suite.test.ts
+Test Suites: 1 passed, 1 total
+Tests:	     5 passed, 5 total
+Snapshots:   0 total
+Time:	     2.42 s, estimated 3 s
+Ran all test suites.
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git checkout -- <archivo>..." para descartar los cambios en el directorio de trabajo)
+
+	modificado:	src/es/geekshubs/academy/kata1/geekshubs.ts
+	modificado:	test/suite.test.ts
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+sin cambios agregados al commit (usa "git add" y/o "git commit -a")
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git diff src/
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+modified: src/es/geekshubs/academy/kata1/geekshubs.ts
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+@ src/es/geekshubs/academy/kata1/geekshubs.ts:4 @
+const FIZZ = 'Fizz'
+const BUZZ = 'Buzz'
+
+/**
+ * kata FizzBuzz
+ */
+export function fizzBuzz (n: number = 0): string {
+  return ''
+  if (n === 0) return '0'
+  if (n % 3 === 0) return n % 5 === 0 ? FIZZ + BUZZ : FIZZ
+  if (n % 5 === 0) return BUZZ
+  return `${n}`
+}
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git add src/
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Cambios a ser confirmados:
+  (usa "git reset HEAD <archivo>..." para sacar del área de stage)
+
+	modificado:	src/es/geekshubs/academy/kata1/geekshubs.ts
+
+Cambios no rastreados para el commit:
+  (usa "git add <archivo>..." para actualizar lo que será confirmado)
+  (usa "git checkout -- <archivo>..." para descartar los cambios en el directorio de trabajo)
+
+	modificado:	test/suite.test.ts
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git diff test/suite.test.ts
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+modified: test/suite.test.ts
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+@ test/suite.test.ts:6 @ import { fizzBuzz } from '../src/es/geekshubs/academy/kata1/geekshubs'
+/* eslint-env jest */
+
+describe('Testing', () => {
+  /*
+  test('Un test por aqui', () => {
+    // Arrange
+
+@ test/suite.test.ts:24 @ describe('Testing', () => {
+    // Assert
+    throw new Error('TODO')
+  })
+  */
+
+  test('Si no se le pasa nada, devuelve 0', () => {
+    const returns = fizzBuzz()
+
+    expect(returns).toBe(0)
+    expect(returns).toBe('0')
+  })
+
+  test('Si se le pasa un 1, devuelve 1', () => {
+    const returns = fizzBuzz(1)
+
+    expect(returns).toBe(1)
+    expect(returns).toBe('1')
+  })
+
+  test('Devuelve Fizz si el número es divisible entre 3', () => {
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git addt test/suite.test.ts
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Cambios a ser confirmados:
+  (usa "git reset HEAD <archivo>..." para sacar del área de stage)
+
+	modificado:	src/es/geekshubs/academy/kata1/geekshubs.ts
+	modificado:	test/suite.test.ts
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git diff --cached
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+modified: src/es/geekshubs/academy/kata1/geekshubs.ts
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+@ src/es/geekshubs/academy/kata1/geekshubs.ts:4 @
+const FIZZ = 'Fizz'
+const BUZZ = 'Buzz'
+
+/**
+ * kata FizzBuzz
+ */
+export function fizzBuzz (n: number = 0): string {
+  return ''
+  if (n === 0) return '0'
+  if (n % 3 === 0) return n % 5 === 0 ? FIZZ + BUZZ : FIZZ
+  if (n % 5 === 0) return BUZZ
+  return `${n}`
+}
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+modified: test/suite.test.ts
+───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+@ test/suite.test.ts:6 @ import { fizzBuzz } from '../src/es/geekshubs/academy/kata1/geekshubs'
+/* eslint-env jest */
+
+describe('Testing', () => {
+  /*
+  test('Un test por aqui', () => {
+    // Arrange
+
+@ test/suite.test.ts:24 @ describe('Testing', () => {
+    // Assert
+    throw new Error('TODO')
+  })
+  */
+
+  test('Si no se le pasa nada, devuelve 0', () => {
+    const returns = fizzBuzz()
+
+    expect(returns).toBe(0)
+    expect(returns).toBe('0')
+  })
+
+  test('Si se le pasa un 1, devuelve 1', () => {
+    const returns = fizzBuzz(1)
+
+    expect(returns).toBe(1)
+    expect(returns).toBe('1')
+  })
+
+  test('Devuelve Fizz si el número es divisible entre 3', () => {
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git commit -m "tests passed 5/5"
+[develop b6b8328] fizzBuzz: tests passed 5/5
+ 2 files changed, 14 insertions(+), 3 deletions(-)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está adelantada a 'origin/develop' por 1 commit.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git push
+Username for 'https://github.com': ^C
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git commit --amend
+[develop 2dc25cd] Importar y adaptar fizzBuzz: tests passed 5/5
+ Date: Thu Mar 4 18:49:24 2021 +0100
+ 2 files changed, 14 insertions(+), 3 deletions(-)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está adelantada a 'origin/develop' por 1 commit.
+  (usa "git push" para publicar tus commits locales)
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git push
+Username for 'https://github.com': lorenzogrv
+Password for 'https://lorenzogrv@github.com':
+Contando objetos: 10, listo.
+Delta compression using up to 8 threads.
+Comprimiendo objetos: 100% (5/5), listo.
+Escribiendo objetos: 100% (10/10), 872 bytes | 872.00 KiB/s, listo.
+Total 10 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/lorenzogrv/2021-02-btc-agile-sw-online-tutoria-01.git
+   db06f41..2dc25cd  develop -> develop
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  echo "Está explicando el ir commit a commit, test a test"
+Está explicando el ir commit a commit, test a test
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  git status
+En la rama develop
+Tu rama está actualizada con 'origin/develop'.
+
+Archivos sin seguimiento:
+  (usa "git add <archivo>..." para incluirlo a lo que se será confirmado)
+
+	scriptfile
+
+no hay nada agregado al commit pero hay archivos sin seguimiento presentes (usa "git add" para hacerles seguimiento)
+ lorenzo  ~  repos  lorenzogrv  2021-02-btc-agile-sw-online-tutoria-01  exit                                               unix  utf-8    0%     1:1  2:2:q
+exit
+
+Script terminado en 2021-03-04 19:08:23+0100
